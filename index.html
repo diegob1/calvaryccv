@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--CREATED BY DIEGO BAUTISTA -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+  
+  
+</head>
+
+<style>
+
+#Header{
+display:flex;
+  align-items:center;
+}
+
+#HeaderNav{
+color: white;
+display: flex;  
+    height: 100%;
+	width:100%;
+    background-color: #31383F;
+    color: white;
+
+}
+.center {
+      
+    background-color: #31383F;  
+	width:100%;	
+}
+
+.col-md-2 {
+  
+
+	font-family: Open Sans; 
+
+  
+}
+.p{
+font-family: Open Sans; 
+}
+.row { // add a new class to your row and target your newest class
+    
+}
+.IsraelDiv{
+
+color:white;
+
+}
+
+.main{
+color:white;
+
+
+}
+#container{
+
+}
+
+#container-full{
+	background-color:white;
+}
+
+#wrapper {
+    width: 64em;
+    max-width: calc(100% - 4em);
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+	background-color:grey;
+	
+}
+#about{
+float:center;
+background-color:white;
+
+  align-items:center;
+  
+  display: inline-block
+  
+  box-sizing: border-box;
+width:50%
+
+}
+body {
+      position: relative; 
+	  background-color:white;
+	  
+  }
+  #MainIsrael{
+	background-color: white;  
+		
+	text-align: center;
+	
+    
+    
+  
+    display: inline-block;
+    float:center;
+    
+	
+	
+  }
+  #IsraelBanner{
+	background-color: white;  
+	width:100%;
+		height:100%;
+		
+	
+	
+  }
+  .yellow_bottom {
+    border-bottom: 5px solid #D6AA47;
+}
+
+  .grey_bottom {
+    border-bottom: 1px solid grey;
+	padding-top:30px;
+	width:75%;
+	margin: 0 auto;
+}
+
+#wrap {
+    padding: 5px;
+	background-color:white;
+	
+}
+.panel.panel-horizontal {
+    display:table;
+    width:100%;
+}
+.panel-body{
+width:5%;display:table;
+}
+.panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+    display:table-cell;
+}
+.panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+    width: 40%;
+    border:0;
+    vertical-align: middle;
+}
+.panel.panel-horizontal > .panel-heading {
+    border-right: 1px solid #ddd;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+}
+.panel.panel-horizontal > .panel-footer {
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 4px;
+}
+#Content{
+background-color:white;
+padding-top:20px;
+}
+
+#register{
+margin: 0 auto;
+text-align:center;
+padding-top:25px;
+
+}
+
+.button {
+margin: 0 auto;
+text-align:center;
+  background-color: #D6AA47; /* Yellow */
+  border: none;
+  color: white;
+  padding-right: 40px;
+  padding-left:40px;
+  padding-bottom:10px;
+  padding-top:10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#giveButton{
+margin: 0 auto;
+text-align:center;
+  background-color: white; /* white */
+  
+  border: none;
+  color: #31383F;
+  padding-right: 40px;
+  padding-left:40px;
+  padding-bottom:10px;
+  padding-top:10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button4 {border-radius: 12px;margin: 0 auto;
+text-align:center;}
+#share{
+margin: 0 auto;
+text-align:center;
+padding-top:25px;
+}
+
+#facebook{
+margin: 0 auto;
+text-align:center;
+
+}
+
+#EMPTY{
+display:flex;
+  align-items:center;
+}
+
+#Footer{
+color: white;
+display: flex;  
+    height: 100%;
+	width:100%;
+    background-color: #31383F;
+    color: white;
+text-align:center;
+margin: 0 auto;
+float: right;
+}
+
+.col-md-2{
+text-align:center;
+margin: 0 auto;
+}
+
+#ccvLOGO{
+top: 100px; right: 20px;vertical-align:middle;background-color:#31383F;
+
+}
+.dropbtn {
+  background-color: #31383F;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color:#D6AA47;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: white;color:#D6AA47;}
+
+.round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 5;
+	background-color: #31383F; 
+	border-color:white;
+
+}
+
+.corner {
+    
+    top: 3px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #31383F; /* Set the bg image here. with "no-repeat" */
+}
+
+.search {
+    
+    width: 190px;
+    height: 30px;
+}::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#rights{
+color:#D3D3D3;
+}
+#copyButton{
+display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+   
+    width: 104px;
+	background: transparent;
+    border: none !important;
+    font-size:0;
+
+}
+#footerContact:hover{
+background-color:#D6AA47;
+
+}
+</style>
+
+<body>
+<script>
+function copyFunction () {
+   // Create new element
+   str = "http://calvaryccv.org/israel-2019/";
+   var el = document.createElement('textarea');
+   // Set value (string to be copied)
+   el.value = str;
+   // Set non-editable to avoid focus and move outside of view
+   el.setAttribute('readonly', '');
+   el.style = {position: 'absolute', left: '-9999px'};
+   document.body.appendChild(el);
+   // Select text inside element
+   el.select();
+   // Copy text to clipboard
+   document.execCommand('copy');
+   // Remove temporary element
+   document.body.removeChild(el);
+   alert("Copied to Clipboard");
+}
+  
+  </script>
+
+<div class="wrapper">
+
+	<div style="background:#31383F !important" class="jumbotron jumbotron-fluid">
+	   <nav class="navbar navbar-default navbar-fixed-top"style="background:#31383F !important">
+	   <div class="container">
+			<div class="row" id = "Header">
+				
+				<div class="col-md-4">
+					<a href="http://calvaryccv.org/" rel="home" id="CCCVHome"><img width="100" height="100" src="http://calvaryccv.org/wp-content/uploads/2018/05/Website-logo-all-white.png" alt="Calvary Chapel Chino Valley" id="imgCCCV" /></a>
+				</div>
+				<div class="row", id="HeaderNav"><div class="center">
+				  <div class="col-md-2"><div class="dropdown">
+					<button class="dropbtn">MEDIA 
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					  <a href="#">Watch Live</a>
+					  <a href="#">Teachings</a>
+					  <a href="#">Facebook Live</a>
+					  <a href="#">Radio</a>
+					</div>
+				  </div> </div>
+				  <div class="col-md-2"><div class="dropdown">
+					<button class="dropbtn">CONNECT 
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					  
+					</div>
+				  </div> </div>
+				  <div class="col-md-2"><div class="dropdown">
+					<button class="dropbtn">EVENTS 
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					</div>
+				  </div> </div>
+				  <div class="col-md-2"><div class="dropdown">
+					<button class="dropbtn">SERVE 
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					  <a href="#">Serve The Church</a>
+					  <a href="#">Missions & Outreach</a>
+					</div>
+				  </div> </div>
+				  <div class="col-md-2"><button class="button button4" id="giveButton">GIVE</button></div>
+				  <div class="col-md-2"><form id="search-form">
+    <div class="search">
+      <input type="text" name="search" class="round" placeholder="Search.."/>
+      <input type="submit" class="corner" value="" placeholder="Search.."/>
+    </div>
+</form></div></div>
+				</div>
+			</div>
+			
+		  </div>
+
+	  
+	  </nav>
+	</div>
+
+	
+	
+	<div id="about" div class="container rounded" class="container-fluid">
+		<div id= "MainIsrael">
+ 
+		  <a href="http://calvaryccv.org/" rel="home" ><img src="Graphic_Elements/Banner_Israel.jpg" alt="IsraelBanner" id="IsraelBanner" /></a>
+		  
+		 </div>
+		 <div class="row" >
+			  <div class="d-flex justify-content-start">
+				  <div class="col-md-6" id = "Content">
+				  <h1 class="display-4" style="font-family: 'BebasNeueRegular';font-weight: 500; font-style: normal;  font-size:75px; "> ISRAEL 2019 </h1>
+				  <div class="row yellow_bottom"></div>
+				  <p style = "line-height: 1.6;">Join Pastor David on a tour through Israel! The tour will take place from Sunday, March 17 through Thursday, March 28 and the cost is $3,957 per person. The cost includes round trip flights, deluxe hotels with breakfast and dinner daily plus four lunches, all transfers, entrance fees, taxes and tips to hotels, drivers, and guides.</p>
+				  
+				  
+				  </div>
+				  <div class="col-md-6" id="wrap" style="padding-top: 40px;">
+
+								<div class="panel panel-default panel-horizontal">
+									<div class="panel-body">
+										 <h3 class="panel-title"><a href="http://calvaryccv.org/" rel="home"><img src="Graphic_Elements/Icons/Date.svg" alt="DateLogo" id="DateLogo" style="width:30px;height:80px;" /></a></h3>
+									</div>
+									<div class="panel-heading"><b>DATE</b><p>March 17 –  28</p></div>
+									
+								</div>
+								<div class="panel panel-default panel-horizontal">
+									<div class="panel-body">
+										 <h3 class="panel-title"><a href="http://calvaryccv.org/" rel="home"><img src="Graphic_Elements/Icons/Cost.svg" alt="DateLogo" id="DateLogo" style="width:30px;height:80px;" /></a></h3>
+									</div>
+									<div class="panel-heading"><b>COST</b><p>$3,957</p></div>
+									
+								</div>
+								<div class="panel panel-default panel-horizontal">
+									<div class="panel-body">
+										 <h3 class="panel-title"><a href="http://calvaryccv.org/" rel="home"><img src="Graphic_Elements/Icons/Contact.svg" alt="DateLogo" id="DateLogo" style="width:50px;height:80px;" /></a></h3>
+									</div>
+									<div class="panel-heading"><b>CONTACT</b><p>Carin Schaller<br>(909) 464-8255 Ext. 263<br>carins@calvaryccv.org</p></div>
+									
+								</div>
+							
+						  <div class="row grey_bottom"></div><div id = "register"><a href="http://inspiredtravel.com/chino19/ " rel="home"><button class="button button4">REGISTER</button></a></div><div class="row grey_bottom"></div>
+						  <div id ="share" style="font-size:18px;"><b> SHARE</b> </div>
+						  <div id ="facebook"><a href="http://calvaryccv.org/http://www.facebook.com/sharer.php?u=http://calvaryccv.org/israel-2019/" rel="home"><img src="Graphic_Elements/Icons/Facebook.svg" alt="facebook share link" id="DateLogo" style="width:50px;height:80px;padding-right:5px;" /></a><a href="mailto:?to=&body=http://calvaryccv.org/israel-2019/" rel="home"><img src="Graphic_Elements/Icons/Email.svg" alt="Open email client" id="DateLogo" style="width:50px;height:80px;padding-right:5px;" /></a><button onclick="copyFunction()"id="copyButton"style="width:40px;height:40px;"><img src="Graphic_Elements/Icons/Link.svg" alt="Copy Page" id="linkImage" style="width:100%;height:100%;"/></div>
+				  </div>
+			  </div>
+		  </div>
+		  
+  </div>
+  
+  <div style="background:#31383F !important" class="jumbotron jumbotron-fluid">
+	   
+	   <div class="container">
+			<div class="row" id = "Footer">
+				
+				<div class="col-md-2">
+					<div id="serviceTimes" style="padding-bottom:15px;font-size:16px;"><b>SERVICE TIMES</b></div>
+					<div id="serviceTimes" style="color:#D6AA47;"<b>SUNDAY</b></div>
+					<div id="serviceTimes">8:30am | 10:45am | 5pm</div>
+					<div id="serviceTimes"style="color:#D6AA47;"><b>ASL</b></div>
+					<div id="serviceTimes">Sunday: 8:30am</div>
+					<div id="serviceTimes"style="color:#D6AA47;"><b>Spanish Service</b></div>
+					<div id="serviceTimes">Sunday: 10:45am</div>
+					<div id="serviceTimes"style="color:#D6AA47;"><b>WEDNESDAY</b></div>
+					<div id="serviceTimes">7pm</div>
+				</div>
+				<div class="col-md-2">
+					<div id="serviceTimes"style="padding-bottom:15px;font-size:16px;"><b>OFFICE INFO</b></div>
+					<div id="serviceTimes"style="color:#D6AA47;"><b>ADDRESS</b></div>
+					<div id="serviceTimes">12205 Pipeline Ave. Chino, CA 91710</div>
+					<div id="serviceTimes"style="color:#D6AA47;"><b>HOURS</b></div>
+					<div id="serviceTimes">Mon - Fri 9am - 5pm</div>
+					<div id="serviceTimes"style="color:#D6AA47;"><b>PHONE</b></div>
+					<div id="serviceTimes">(909) 464-8255</div>
+					<div id="serviceTimes"style="color:#D6AA47;"><b>EMAIL</b></div>
+					<div id="footerContact"><a href="mailto:contact@calvaryccv.org">contact@calvaryccv.org</a></div>
+				</div>
+				
+				<div class="col-md-2"><div style="padding-top:50px;"></div>
+					<a href="http://calvaryccv.org/" rel="home"><img src="http://calvaryccv.org/wp-content/uploads/2018/05/footer-image.png" alt="DateLogo" id = "ccvLOGO"  style="width:200px;height:100px;" /></a>
+				</div>
+				
+				<div class="col-md-2">
+				<div>
+					<a href="https://www.facebook.com/CalvaryChapelChinoValley/" rel="home"><img src="http://calvaryccv.org/wp-content/uploads/2018/05/Facebook.png" alt="DateLogo" id="DateLogo" style="width:40%;height:50%;padding-top:15px;" /></a></div>
+					<div>
+					<a href="https://www.instagram.com/calvaryccv/" rel="home"><img src="http://calvaryccv.org/wp-content/uploads/2018/05/Instagram.png" alt="DateLogo" id="DateLogo" style="width:40%;height:50%;padding-top:15px;" /></a></div>
+					<div>
+					<a href="https://www.youtube.com/user/CCChinoValley" rel="home"><img src="http://calvaryccv.org/wp-content/uploads/2018/05/YouTube.png" alt="DateLogo" id="DateLogo" style="width:40%;height:50%;padding-top:15px;;" /></a></div>
+				</div>
+
+			</div>
+			<div id = "rights" >Calvary Chapel Chino Valley © 2017 All Rights Reserved </div>
+		  </div>
+
+	  
+	  
+	</div>
+		
+	
+		
+</div>
+
+</body>  
+
+</html>
